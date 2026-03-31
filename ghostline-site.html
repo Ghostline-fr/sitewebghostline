@@ -18,8 +18,8 @@
     --text-mid: #888;
     --text: #c8c8c8;
     --white: #f0f0f0;
-    --accent: #E2FF4F;
-    --accent-dim: rgba(226,255,79,0.08);
+    --accent: #D42A2A;
+    --accent-dim: rgba(212,42,42,0.08);
     --font-display: 'Syne', sans-serif;
     --font-mono: 'DM Mono', monospace;
   }
@@ -52,7 +52,7 @@
   .cursor-ring {
     position: fixed;
     width: 36px; height: 36px;
-    border: 1px solid rgba(226,255,79,0.4);
+    border: 1px solid rgba(212,42,42,0.4);
     border-radius: 50%;
     pointer-events: none;
     z-index: 9998;
@@ -180,7 +180,7 @@
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse 80% 60% at 70% 40%, rgba(226,255,79,0.04) 0%, transparent 60%),
+      radial-gradient(ellipse 80% 60% at 70% 40%, rgba(212,42,42,0.04) 0%, transparent 60%),
       radial-gradient(ellipse 60% 80% at 20% 80%, rgba(255,255,255,0.02) 0%, transparent 50%);
     z-index: 0;
   }
@@ -1160,7 +1160,7 @@
           <div class="contact-item-icon">✉️</div>
           <div>
             <div class="contact-item-label">Email</div>
-            <div class="contact-item-value">contact@ghostline.fr</div>
+            <div class="contact-item-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="31525e5f455052457156595e42455d585f541f5743">[email&#160;protected]</a></div>
           </div>
         </div>
         <div class="contact-item">
@@ -1242,7 +1242,7 @@
   ✓ Message envoyé — réponse sous 48h
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Cursor
   const cursor = document.getElementById('cursor');
   const ring = document.getElementById('cursorRing');
@@ -1257,8 +1257,8 @@
   }
   animateRing();
   document.querySelectorAll('a,button,input,textarea,select,.presta-card,.portfolio-item').forEach(el => {
-    el.addEventListener('mouseenter', () => { ring.style.width='60px'; ring.style.height='60px'; ring.style.borderColor='rgba(226,255,79,0.7)'; });
-    el.addEventListener('mouseleave', () => { ring.style.width='36px'; ring.style.height='36px'; ring.style.borderColor='rgba(226,255,79,0.4)'; });
+    el.addEventListener('mouseenter', () => { ring.style.width='60px'; ring.style.height='60px'; ring.style.borderColor='rgba(212,42,42,0.7)'; });
+    el.addEventListener('mouseleave', () => { ring.style.width='36px'; ring.style.height='36px'; ring.style.borderColor='rgba(212,42,42,0.4)'; });
   });
 
   // Nav scroll
@@ -1295,12 +1295,4 @@
   // Form submit
   function handleSubmit(e) {
     e.preventDefault();
-    const toast = document.getElementById('toast');
-    toast.style.opacity = '1';
-    toast.style.transform = 'translateY(0)';
-    setTimeout(() => { toast.style.opacity='0'; toast.style.transform='translateY(12px)'; }, 4000);
-    e.target.reset();
-  }
-</script>
-</body>
-</html>
+    const toast = document.getElementById('toast'
